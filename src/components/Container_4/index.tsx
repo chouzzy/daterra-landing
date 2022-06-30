@@ -71,6 +71,7 @@ export function Container_4() {
                      <form onSubmit={handleSubmit(onSubmit)}>
                         <Text>Empresa/ Pessoa:</Text>
                         <Input
+                        color='datBlack'
                         bg='white'
                         type='name'
                         my='10px'
@@ -81,6 +82,7 @@ export function Container_4() {
                         />
                         <Text >Assunto:</Text>
                         <Input
+                        color='datBlack'
                         bg='white'
                         type='text'
                         placeholder='Assunto'
@@ -91,6 +93,7 @@ export function Container_4() {
 
                         <Text >Mensagem:</Text>
                         <Input
+                        color='datBlack'
                         bg='white'
                         type='text'
                         placeholder='Mensagem'
