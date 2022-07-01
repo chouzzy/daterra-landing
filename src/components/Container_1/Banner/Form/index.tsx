@@ -1,9 +1,51 @@
-import { Box, Button, Container, Flex, FormControl, FormLabel, Grid, GridItem, Heading, Input, InputGroup, InputLeftAddon, InputLeftElement, Text, VStack } from "@chakra-ui/react";
+import { Button, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputLeftElement, Select, useBreakpointValue, VStack } from "@chakra-ui/react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { BsTelephoneFill } from "react-icons/bs";
 import { IoIosMail } from "react-icons/io";
 
 
 export function Form(formData) {
+
+   const [states, setStates] = useState([]);
+   const [cities, setCities] = useState([]);
+   const [able, setAble] = useState(true);
+
+   let [city, setCity] = useState('')
+   let [state, setState] = useState('')
+
+   useEffect(() => {
+      const fetchStates = async () => {
+        const statesList = await axios(
+          'https://servicodados.ibge.gov.br/api/v1/localidades/estados',
+        );
+  
+        setStates(statesList.data);
+      };
+
+      const fetchCities = async (state) => {
+      if (state != '') {
+         const citiesList = await axios(
+            `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${state}/microrregioes`,
+         );
+         setCities(citiesList.data);
+      };
+      }
+  
+      fetchStates();
+      fetchCities(state)
+    }, [state]);
+
+   useEffect( () => {
+      if ((state != '')) {
+         setAble(false)
+      } else {
+         setAble(true)
+      }
+      console.log('change')
+      console.log(state)
+   }, [state])
+
    return (
 
             <Flex bg='white' justifyContent='center' boxShadow='lg' 
@@ -29,6 +71,22 @@ export function Form(formData) {
                   <Input type='mail' placeholder='Digite seu e-mail' />
                   </InputGroup>
 
+                  <FormLabel fontWeight='400' pl={2} pt={4} mb={0} htmlFor='e-mail'> Estado e Cidade</FormLabel>
+                  <InputGroup>
+                  <Select id='country' onChange={ (e) => setState(e.target.value)}  placeholder='UF'>
+                     {states.map(item => {
+                        return (
+                           <option key={item.id}>{item.sigla}</option>
+                     )})}
+                  </Select>
+                  <Select isDisabled={able} id='city' onChange={ (e) => setCity(e.target.value)} placeholder='Cidade'>
+                        {cities.map(item => {
+
+                           return (
+                              <option key={item.id}>{item.nome}</option>
+                        )})}
+                  </Select>
+                  </InputGroup>
                   </FormControl>
 
                   <Button color='white' borderRadius={3} w='100%' _hover={{bg:'datBlue', transition:'360ms'}} mx='auto' bg='datGreen'>
