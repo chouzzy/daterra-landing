@@ -19,16 +19,28 @@ export function Form(formData) {
         const statesList = await axios(
           'https://servicodados.ibge.gov.br/api/v1/localidades/estados',
         );
-  
-        setStates(statesList.data);
-      };
+
+        let statesListPivot = []
+
+        console.log(statesList.data)
+        statesList.data.map(item => {
+            statesListPivot.push(item.sigla)})
+        console.log(statesListPivot)
+        setStates(statesListPivot.sort());
+      }
 
       const fetchCities = async (state) => {
       if (state != '') {
          const citiesList = await axios(
             `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${state}/microrregioes`,
          );
-         setCities(citiesList.data);
+         let citiesListPivot = []
+
+         console.log(citiesList.data)
+         citiesList.data.map(item => {
+             citiesListPivot.push(item.nome)})
+         console.log(citiesListPivot)
+         setCities(citiesListPivot.sort());
       };
       }
   
@@ -76,14 +88,14 @@ export function Form(formData) {
                   <Select id='country' onChange={ (e) => setState(e.target.value)}  placeholder='UF'>
                      {states.map(item => {
                         return (
-                           <option key={item.id}>{item.sigla}</option>
+                           <option key={item}>{item}</option>
                      )})}
                   </Select>
                   <Select isDisabled={able} id='city' onChange={ (e) => setCity(e.target.value)} placeholder='Cidade'>
                         {cities.map(item => {
 
                            return (
-                              <option key={item.id}>{item.nome}</option>
+                              <option key={item}>{item}</option>
                         )})}
                   </Select>
                   </InputGroup>
