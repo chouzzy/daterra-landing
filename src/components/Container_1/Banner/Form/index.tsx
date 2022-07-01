@@ -22,10 +22,8 @@ export function Form(formData) {
 
         let statesListPivot = []
 
-        console.log(statesList.data)
         statesList.data.map(item => {
             statesListPivot.push(item.sigla)})
-        console.log(statesListPivot)
         setStates(statesListPivot.sort());
       }
 
@@ -36,10 +34,8 @@ export function Form(formData) {
          );
          let citiesListPivot = []
 
-         console.log(citiesList.data)
          citiesList.data.map(item => {
              citiesListPivot.push(item.nome)})
-         console.log(citiesListPivot)
          setCities(citiesListPivot.sort());
       };
       }
@@ -54,8 +50,6 @@ export function Form(formData) {
       } else {
          setAble(true)
       }
-      console.log('change')
-      console.log(state)
    }, [state])
 
    return (
