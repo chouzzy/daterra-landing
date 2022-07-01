@@ -36,19 +36,19 @@ export function Container_4() {
               borderBottom='1px
               solid
               #55808c'
-              templateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)','repeat(12,1fr)','repeat(12,1fr)']}
+              templateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)']}
               textAlign='center'
               color='white'
             >
                <GridItem
                  colStart={[1,1,1,1,1]}
                  colEnd={[1,1,1,3,3]}
-                 my={['','','','auto','auto']}
-                 mx={['auto','auto','auto','','']}
+                 my={['','','','','']}
+                 mx={['auto','auto','auto','auto','auto']}
                >
                   <Image src={"static/img/daterra-logo-white-cut.png"} maxW={['100%','200px','100%','100%']} alt='Logo Daterra' />
                </GridItem>
-
+{/* 
                <GridItem pl={[0,0,0,8,8]} colStart={[1,1,1,3,3]} colEnd={[1,1,1,8,8]} my='auto'> 
                      <Flex mr='auto' textAlign='left'>
                         <Box fontSize='0.85rem' fontWeight='300'>
@@ -108,7 +108,7 @@ export function Container_4() {
                      </form>
 
                   </Stack>
-               </GridItem>
+               </GridItem> */}
             </Grid>
       </Container> 
       </>
