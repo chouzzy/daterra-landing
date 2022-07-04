@@ -16,13 +16,13 @@ export function Banner() {
    return (
       <Grid
         templateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)','repeat(2,1fr)','repeat(2,1fr)']}
-        bgImage={['static/img/leaves-3.jpg','static/img/leaves-3.jpg','static/img/leaves-3.jpg','static/img/model.jpg','static/img/model.jpg']}
+        bgImage={['static/img/leaves-3.jpg','static/img/leaves-3.jpg','static/img/leaves-3.jpg','static/img/model-cut.jpg','static/img/model-cut.jpg']}
         bgRepeat='no-repeat'
         m='0'
         minH={['','','','100vh','100vh']}
         p='0'
         bgPosition={['center','center','center','left','left']}
-        bgSize={['cover','cover','cover','auto','']}
+        bgSize='cover'
       >
 
          { isDesktopVersion?

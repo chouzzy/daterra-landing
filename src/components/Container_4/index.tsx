@@ -39,15 +39,17 @@ export function Container_4() {
               templateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)']}
               textAlign='center'
               color='white'
+              position='relative'
             >
                <GridItem
                  colStart={[1,1,1,1,1]}
                  colEnd={[1,1,1,3,3]}
-                 my={['','','','','']}
+                 mb={[8,8,8,'','']}
                  mx={['auto','auto','auto','auto','auto']}
                >
                   <Image src={"static/img/daterra-logo-white-cut.png"} maxW={['100%','200px','100%','100%']} alt='Logo Daterra' />
                </GridItem>
+               <Text position='absolute' right='0' bottom='0' fontSize='0.75rem'>created by <Link _hover={{textDecoration:'none', color:'#F55F5E', transition:'360ms'}} color='datGreen'>awer.co</Link> </Text>
 {/* 
                <GridItem pl={[0,0,0,8,8]} colStart={[1,1,1,3,3]} colEnd={[1,1,1,8,8]} my='auto'> 
                      <Flex mr='auto' textAlign='left'>

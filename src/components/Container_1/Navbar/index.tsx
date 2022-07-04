@@ -30,17 +30,17 @@ export function Navbar() {
             <Modal/>
          : 
          <>
-            <GridItem colStart={[3,3,3,3,4]} colEnd={[9,9,9,8,8]} mb={2.5}>
+            <GridItem colStart={[3,3,3,3,4]} colEnd={[10,10,10,10,11]} mb={2.5}>
                   <Text fontSize='1.45rem' color='datCyan'fontStyle='italic'>O toque de beleza que faltava no seu dia</Text>
             </GridItem>
 
-            <GridItem colStart={[8,8,8,8,9]} colEnd={11} mb={2} >
+            <GridItem colStart={[10,10,10,10,11]} colEnd={12} mb={2} >
                   <Button borderRadius={3} _hover={{boxShadow:'lg'}} bg='datBlue' fontSize='0.9rem' color='white'>SEJA UMA CONSULTORA</Button>
             </GridItem>
 
-            <GridItem colStart={11} colEnd={13} mb={2}>
+            {/* <GridItem colStart={11} colEnd={13} mb={2}>
                   <Button borderRadius={3} _hover={{boxShadow:'lg'}} bg='datGreen' color='white'>Loja Daterra</Button>
-            </GridItem>
+            </GridItem> */}
             </>
          }
          </Grid>

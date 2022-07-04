@@ -10,7 +10,7 @@ import { IconGrid } from "./IconGrid";
 export function IconsGrid() {
    const GridMap = [
       {id:1,icon: <GiHealthPotion fontSize='3rem'/>, color:'datBlue', description:'Há 34 anos cuidando de você '},
-      {id:2,icon: <GiSpiralBottle fontSize='3rem'/>, color:'datBlue', description:'Linha completa com mais de 70 produtos'},
+      {id:2,icon: <GiSpiralBottle fontSize='3rem'/>, color:'datBlue', description:'Linha de tratamento com mais de 70 produtos'},
       {id:3,icon: <FaMoneyBillWave fontSize='3rem'/>, color:'datBlue', description:'Conquiste sua independência financeira'},
       {id:4,icon: <VscGraphLine fontSize='3rem'/>, color:'datBlue', description:'Margem de lucro de pelo menos 50%'},
       {id:5,icon: <RiCustomerService2Fill fontSize='3rem'/>, color:'datBlue', description:'Atendimento humanizado'},
