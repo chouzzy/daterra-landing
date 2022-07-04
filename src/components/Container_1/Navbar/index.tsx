@@ -36,7 +36,7 @@ export function Navbar() {
             </GridItem>
 
             <GridItem colStart={[10,10,10,10,11]} colEnd={12} mb={2} >
-               <Slink to='#form' spy={true} smooth={true} offset={-50} duration={500}>
+               <Slink to='#form' spy={true} smooth={true} offset={-45} duration={500}>
                   <Button borderRadius={3} _hover={{boxShadow:'lg'}} bg='datBlue' fontSize='0.9rem' color='white'>SEJA UMA CONSULTORA</Button>
                </Slink>
             </GridItem>
