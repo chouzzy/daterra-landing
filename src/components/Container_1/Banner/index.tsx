@@ -11,8 +11,8 @@ export function Banner() {
       xl:true,
    })
 
-   const promoTitle = 'Tenha ganhos de 50 a 100% nas vendas e conquiste sua independência financeira'
-   const promoSubtitle = 'Consulte a disponibiliade de atendimento para sua região.*'
+   const promoTitle = 'Comece a ganhar dinheiro antes de investir!'
+   const promoSubtitle = 'Consulte as condições da sua região com nossa equipe.*'
    return (
       <Grid
         templateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(1,1fr)','repeat(2,1fr)','repeat(2,1fr)']}
