@@ -43,7 +43,6 @@ export function Form(formData) {
       }
   
       fetchStates();
-      console.log('teste 2')
       fetchCities(state)
     }, [state]);
 
@@ -53,7 +52,6 @@ export function Form(formData) {
       } else {
          setAble(true)
       }
-      console.log(state)
    }, [state])
 
    const [disable, setDisable] = useState(false)
