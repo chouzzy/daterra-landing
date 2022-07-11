@@ -32,7 +32,7 @@ export function Form(formData) {
       const fetchCities = async (state) => {
       if (state != {}) {
          const citiesList = await axios(
-            `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${state['Estado']}/microrregioes`,
+            `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${state['Estado']}/municipios`,
          );
          let citiesListPivot = []
 
