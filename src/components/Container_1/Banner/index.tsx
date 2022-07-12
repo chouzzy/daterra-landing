@@ -34,7 +34,7 @@ export function Banner() {
          </Box>
 
          <Flex alignItems='center' color='gray.600'>
-         <Form title='SEJA UMA CONSULTORA' name='Nome' number='Número' email='E-mail' residencia='Cidade e Estado' buttonText='Enviar' />
+         <Form title='SEJA UMA CONSULTORA' name='Nome' number='Telefone (apenas números)' email='E-mail' residencia='Cidade e Estado' buttonText='Enviar' />
          </Flex>
          </>
 

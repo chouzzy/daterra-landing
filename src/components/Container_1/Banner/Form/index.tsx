@@ -1,4 +1,4 @@
-import { Button, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputLeftElement, Select, VStack } from "@chakra-ui/react";
+import { Button, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputLeftElement, InputRightElement, Select, VStack } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -95,8 +95,9 @@ export function Form(formData) {
                      
                      <FormLabel fontWeight='400' pl={2} pt={4} mb={0} htmlFor='telephone'> {formData.number}</FormLabel>
                      <InputGroup>
-                     <InputLeftElement pointerEvents='none' children={<BsTelephoneFill color='gray' />}/>
-                     <Input type='tel' placeholder='Digite seu número' {...register("Numero")} />
+                     <Input type='tel' w='100px' minLength={2} maxLength={3} placeholder='DDD' {...register("ddd")} />
+                     <Input type='tel' minLength={8} maxLength={9} placeholder='Ex: 912345678 ou 23456789' {...register("Numero")} />
+                     <InputRightElement pointerEvents='none' children={<BsTelephoneFill fontSize='1.1rem' color='gray' />}/>
                      </InputGroup>
 
                      <FormLabel fontWeight='400' pl={2} pt={4} mb={0} htmlFor='e-mail'> {formData.email}</FormLabel>
