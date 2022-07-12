@@ -16,7 +16,7 @@ export default async (req,res) => {
    const data = {
       to:'matheus@awer.co',
       from: 'contato@awer.co',
-      subject: `FORMULÁRIO DATERRA - SEJA UMA CONSULTORA`,
+      subject: `DATERRA COSMÉTICOS - SEJA UM(A) CONSULTOR(A)`,
       text: message,
       html: message.replace(/\r\n/g,'<br>')
    }
