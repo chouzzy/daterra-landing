@@ -102,7 +102,7 @@ export function Form(formData) {
                      <FormLabel fontWeight='400' pl={2} pt={4} mb={0} htmlFor='e-mail'> {formData.email}</FormLabel>
                      <InputGroup>
                      <InputLeftElement pointerEvents='none' children={<IoIosMail fontSize='1.4rem' color='gray' />}/>
-                     <Input type='mail' placeholder='Digite seu e-mail' {...register("E-mail")} />
+                     <Input type='mail' placeholder='Digite seu e-mail' {...register("Email")} />
                      </InputGroup>
 
                      <FormLabel fontWeight='400' pl={2} pt={4} mb={0} htmlFor='e-mail'> Estado e Cidade</FormLabel>
