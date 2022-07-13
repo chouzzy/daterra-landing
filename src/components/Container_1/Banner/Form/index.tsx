@@ -1,4 +1,4 @@
-import { Button, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputLeftElement, InputRightElement, Select, VStack } from "@chakra-ui/react";
+import { Button, Flex, FormControl, FormLabel, Heading, Input, InputGroup, InputLeftElement, InputRightElement, Link, Select, VStack } from "@chakra-ui/react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -139,6 +139,10 @@ export function Form(formData) {
                         >
                            {sentText}
                         </Button>
+                     <Link display='inline' fontSize='0.62rem' _hover={{color:'datGreen', transition:'360ms'}} href='https://loja.daterra.com.br/politica-de-privacidade'>
+                     <Flex fontSize='0.6rem' p={1} w='100%'>* Ao clicar no botão "enviar", você concorda com nossa política de privacidade
+                     </Flex>
+                     </Link>
                      </form>
                   </FormControl>
 
