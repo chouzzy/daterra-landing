@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
          {/* <!-- Facebook Meta Tags --> */}
          <meta property="og:url" content="https://revenda.daterra.com.br/"/>
          <meta property="og:type" content="website"/>
-         <meta property="og:title" content="Daterra - Qualidade que se sente"/>
+         <meta property="og:title" content="Daterra - Seja uma revendedora"/>
          <meta property="og:description" content="Qualidade que se sente"/>
          <meta property="og:image" content="https://revenda.daterra.com.br/static/img/daterra-logo.png"/>
 
@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
          <meta name="twitter:card" content="summary_large_image"/>
          <meta property="twitter:domain" content="daterra.com.br"/>
          <meta property="twitter:url" content="https://revenda.daterra.com.br//"/>
-         <meta name="twitter:title" content="Daterra - Qualidade que se sente"/>
+         <meta name="twitter:title" content="Daterra - Seja uma revendedora"/>
          <meta name="twitter:description" content="O toque de beleza que faltava no seu dia"/>
          <meta name="twitter:image" content="https://revenda.daterra.com.br/static/img/daterra-logo.png"/>
 
