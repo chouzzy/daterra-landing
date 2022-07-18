@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
          <meta property="og:type" content="website"/>
          <meta property="og:title" content="Daterra - Seja uma revendedora"/>
          <meta property="og:description" content="Qualidade que se sente"/>
-         <meta property="og:image" content="https://revenda.daterra.com.br/static/img/daterra-logo.png"/>
+         <meta property="og:image" content="https://revenda.daterra.com.br/static/img/daterra-meta.png"/>
 
          {/* <!-- Twitter Meta Tags --> */}
          <meta name="twitter:card" content="summary_large_image"/>
@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
          <meta property="twitter:url" content="https://revenda.daterra.com.br//"/>
          <meta name="twitter:title" content="Daterra - Seja uma revendedora"/>
          <meta name="twitter:description" content="O toque de beleza que faltava no seu dia"/>
-         <meta name="twitter:image" content="https://revenda.daterra.com.br/static/img/daterra-logo.png"/>
+         <meta name="twitter:image" content="https://revenda.daterra.com.br/static/img/daterra-meta.png"/>
 
 
          <link rel="preconnect" href="https://fonts.googleapis.com"/>
