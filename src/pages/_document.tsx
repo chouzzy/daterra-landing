@@ -7,6 +7,7 @@ export default class MyDocument extends Document {
          <Head>
           {/* <!-- HTML Meta Tags --> */}
           <meta name="description" content="O toque de beleza que faltava no seu dia"/>
+          <meta name="keywords" content="venda, revenda, Venda, Revenda, Daterra, Loja, Consultora, daterra, loja, lojas, consultora, revendas, vendas, dinheiro, renda, renda extra, extra, enriquecer, trabalho, grátis, produtos, cosméticos, revendedor, revendedora, consultor, rica, produtos, inscreva-se, seja uma revendedora, seja uma consultora, seja um consultor, seja um revendedor, site, online, vender, revender, lucrar, enriquecer"/>
 
          {/* <!-- Facebook Meta Tags --> */}
          <meta property="og:url" content="https://revenda.daterra.com.br/"/>
